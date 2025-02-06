@@ -56,7 +56,7 @@ body {
 button {
     padding: 12px 30px;
     font-size: 1.2rem;
-    background-color: #fff;
+    background-color: #ff00;
     border: 2px solid #ff0044;
     color: #ff0044;
     border-radius: 30px;
@@ -68,8 +68,8 @@ button {
 }
 
 .stats {
-    background-color: #fff;
-    color: #fff;
+    background-color: #ff00;
+    color: white;
     box-shadow: 0 0 20px #ff0044;
     transform: scale(1.1);
 }
