@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('arka.jpg') no-repeat center center fixed;
+    background-size: cover; /* Fotoğrafın tüm ekranı kapsamasını sağlar */
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Yazı rengini beyaz yapar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Sayfanın yüksekliğini tamamen kapsar */
+    width: 100vw; /* Sayfanın genişliğini tamamen kapsar */
+    overflow: hidden; /* Taşan içerikleri gizler */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    animation: moveUpDown 2s ease-in-out infinite; /* Logo'yu yukarı aşağı hareket ettirir */
+    margin-bottom: 10px; /* <h1> ile 10px boşluk bırakır */
+
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px red, 0 0 30px #ff00ff, 0 0 40px #ff0044;
+}
+
+.coin-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* 5 sütun */
+    gap: 20px;  /* Coinler arasındaki boşluk */
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.coin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 0.9rem;
+    
+    
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+    
+}
+
+
+/* Coin üzerine seçildiğini gösteren efekt */
+.coin.selected::after {
+    content: '✔';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #00ff00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.coin img {
+    width: 40px;  /* Coin logolarının boyutu */
+    height: 40px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.start-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: 2px solid #ff0044;
+    color: #ff0044;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff0044;
+    width: 70%;
+    max-width: 250px;
+}
+
+.start-btn:hover {
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0 0 20px #ff0044;
+    transform: scale(1.1);
+}
+.bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 0, 0, 0.4);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}

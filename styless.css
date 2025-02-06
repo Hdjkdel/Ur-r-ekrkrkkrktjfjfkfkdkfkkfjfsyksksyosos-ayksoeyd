@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: url('arka.jpg'); /* Fotoğrafın yolunu buraya ekleyin */
+    background-size: cover; /* Fotoğrafın tüm ekranı kaplamasını sağlar */
+    background-position: center; /* Fotoğrafın ortalanmasını sağlar */
+    background-repeat: no-repeat; /* Fotoğrafın tekrarlanmasını engeller */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 400px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.seed-container, .found-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    margin-top: 10px;
+    position: relative;
+    border-image-slice: 1;
+    animation: neonFlow 3s infinite linear;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: 2px solid #ff0044;
+    color: #ff0044;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff0044;
+    width: 70%;
+    max-width: 250px;
+}
+
+.stats {
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0 0 20px #ff0044;
+    transform: scale(1.1);
+}
+
+.found-item {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1a1a;
+    border: 2px solid transparent; /* Çerçeve genişliği */
+    border-radius: 10px; /* Köşeler yuvarlak */
+     /* Arka planın çerçeve dışına taşmaması için */
+}
+
+.found-item img {
+    width: 40px; /* Coin logosu boyutu */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.found-item .coin-name {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.found-item .balance {
+    font-size: 16px;
+    color: #00FF00; /* Yeşil renk bakiyeyi belirtmek için */
+}
+
+/* Coin Çerçeveleri (Logoların etrafındaki çerçeve renkleri) */
+.btc { border-color: #FFA500; } /* Turuncu */
+.eth { border-color: #627EEA; } /* Mavi */
+.sol { border-color: #9945FF; } /* Mor */
+.trx { border-color: #C9002B; } /* Kırmızı */
+.usdt { border-color: #26A17B; } /* Yeşil */
+.matic { border-color: #8247E5; } /* Mor */
+.doge { border-color: #C2A633; } /* Sarı */
+.bnb { border-color: #F3BA2F; } /* Altın Sarısı */
+
+/* Neon efekt animasyonu */
+@keyframes neonFlow {
+    0% { border-image-source: linear-gradient(45deg, lime, red); }
+    25% { border-image-source: linear-gradient(90deg, red, cyan); }
+    50% { border-image-source: linear-gradient(135deg, cyan, orange); }
+    75% { border-image-source: linear-gradient(180deg, orange, purple); }
+    100% { border-image-source: linear-gradient(225deg, purple, lime); }
+}

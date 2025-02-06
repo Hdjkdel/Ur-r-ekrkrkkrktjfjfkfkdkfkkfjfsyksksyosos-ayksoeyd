@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Screen</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-image: url('arka.jpg'); /* Arka plan resmi */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+        }
+
+        .support-container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .faq-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background-color: #ff0044;
+            border: 2px solid red;
+            border-radius: 8px;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 250px; /* Buton genişliğini eşit tutmak için */
+        }
+
+        .faq-item:hover {
+            border-color: #4a90e2;
+            background-color: #1f3b64;
+        }
+
+        .contact-button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: 2px solid #ff0044;
+    color: #ff0044;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff0044;
+    width: 70%;
+    max-width: 250px;
+}
+
+ .contact-button:hover {
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0 0 20px #ff0044;
+    transform: scale(1.1);
+}
+
+       
+         
+
+        .bottom-menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(255, 0, 0, 0.4);
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bottom-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="support-container">
+        <h1>Support</h1>
+        <h2>F.A.Q.</h2>
+        <div class="faq-grid">
+            <button class="faq-item">How many devices can it be used on?</button>
+            <button class="faq-item">How to withdraw money?</button>
+            <button class="faq-item">Forgot your password?</button>
+            <button class="faq-item">How to get the full version?</button>
+        </div>
+        
+        <button onclick="location.href='https://t.me/D_admin_D00';" class="contact-button">CONTACT SUPPORT</button>
+    </div>
+
+    <!-- Sabit alt çerçeve -->
+    <div class="bottom-menu">
+        <a href="index9.html">🔍 Search</a>
+        <a href="index5.html" class="active">📊 Statistics</a>
+        <a href="indexsport.html">💬 Support</a>
+    </div>
+</body>
+</html>
